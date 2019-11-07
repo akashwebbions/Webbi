@@ -1,5 +1,5 @@
 { 
- "name": "webbi/webbiContactform",
+ "name": "webbi/webbi-Contactform",
     "type": "library",
     "version": "1.0.0",
     "description": "A contact form package for laravel",
