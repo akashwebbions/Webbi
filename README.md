@@ -1,3 +1,4 @@
+# Webbi
 # How to create and publish a Laravel package on packagist
 A Laravel package is a set of reusable classes created to add extra functionality to a Laravel website. In clearer terms, a package is to Laravel, what plugins are to WordPress. The primary goal of Laravel packages is to reduce development time by making reusable features into a set of standalone classes that can be used within any Laravel project.
 
@@ -44,13 +45,13 @@ git clone https://github.com/samuelayo/contact-form-package.git packages/samuela
             "database/factories"
         ],
         "psr-4": {
-            "Samuelayo\\Contactform\\": "packages/samuelayo/contactform/src",
+            "Webbi\\WebbiContactform\\": "packages/samuelayo/WebbiContactform/src",
             "App\\": "app/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Samuelayo\\Contactform\\": "packages/samuelayo/contactform/src",
+            "Webbi\\WebbiContactform\\": "packages/samuelayo/WebbiContactform/src",
             "Tests\\": "tests/"
         }
     },
@@ -68,7 +69,7 @@ composer dump-autoload
          ...,
             App\Providers\RouteServiceProvider::class,
             // Our new package class
-            Samuelayo\Contactform\ContactFormServiceProvider::class,
+            Webbi\WebbiContactform\ContactFormServiceProvider::class,
         ],
 ```
 - Migrate the database tables
@@ -88,9 +89,10 @@ Visit http://localhost:8000/contact in your browser to view the demo.
 If you want to include the project as a package to your app, run:
 
 ```
-composer require samuelayo/contactform
+composer require webbi/webbi-contactform
 ```
 
 ## Built With
 
 * [Laravel](https://laravel.com/) - The PHP framework for web artisans.
+        
